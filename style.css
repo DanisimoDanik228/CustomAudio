@@ -1,0 +1,31 @@
+.progress {
+  --p: 0;
+  appearance: none
+}
+
+.progress::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, blue calc(var(--p) * 1%), black 0);
+}
+
+.progress::-moz-range-track {
+  background: linear-gradient(to right, blue calc(var(--p) * 1%), black 0);
+}
+
+.progress::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: green;
+  cursor: pointer;
+}
+
+.progress::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: blue;
+  cursor: pointer;
+}
+
+.time {
+  font-variant-numeric: tabular-nums;
+}
